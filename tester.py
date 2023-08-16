@@ -4,6 +4,8 @@ from coffee_maker import CoffeeMaker
 
 menu = Menu()
 coffeeMaker = CoffeeMaker()
+print("********************************")
+print("👋🏼 Welcome to the Coffee Machine!")
 
 while True:
     answer = input("What would you like (espresso/latte/cappuccino)?: ")
@@ -14,7 +16,6 @@ while True:
         break
     elif answer == "report":
         coffeeMaker.report()
-
     elif answer == "refill":
         water = int(input("Refill water: "))
         milk = int(input("Refill milk: "))
